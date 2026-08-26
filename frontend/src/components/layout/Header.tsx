@@ -29,7 +29,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden lg:flex space-x-8">
           <Link to="/" className="text-sm font-semibold text-brand-navy hover:text-brand-gold transition-colors tracking-wide">HOME</Link>
           <Link to="/about" className="text-sm font-semibold text-brand-navy hover:text-brand-gold transition-colors tracking-wide">WHO ARE WE</Link>
           <Link to="/products" className="text-sm font-semibold text-brand-navy hover:text-brand-gold transition-colors tracking-wide">WHAT WE MAKE</Link>
