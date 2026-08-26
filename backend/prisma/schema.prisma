@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  imageUrl    String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Machinery {
+  id        String   @id @default(uuid())
+  name      String
+  quantity  Int
+  purpose   String
+  imageUrl  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Client {
+  id        String   @id @default(uuid())
+  name      String
+  logoUrl   String
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model GalleryImage {
+  id        String   @id @default(uuid())
+  title     String?
+  category  String   // e.g., 'Factory', 'Production', 'Garments'
+  imageUrl  String
+  createdAt DateTime @default(now())
+}
+
+model Enquiry {
+  id              String   @id @default(uuid())
+  name            String
+  companyName     String?
+  phone           String
+  email           String
+  city            String?
+  garmentCategory String?
+  quantity        String?
+  deliveryDate    String?
+  requirement     String?
+  message         String?
+  fileUrl         String?
+  status          String   @default("New") // New, Contacted, In Discussion, Quoted, Confirmed, Completed, Rejected
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model CompanyInfo {
+  id          String   @id @default(uuid())
+  address     String
+  phone       String
+  whatsapp    String
+  email       String
+  workingHours String
+  instagram   String?
+  facebook    String?
+  linkedin    String?
+  updatedAt   DateTime @updatedAt
+}
