@@ -22,14 +22,14 @@ const Header = () => {
           : "bg-white py-6"
       }`}
     >
-      <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+      <div className="container mx-auto px-6 lg:px-12 flex items-center">
         {/* Logo */}
-        <Link to="/" className="flex flex-col">
-          <img src="/logo.png" alt="A.D Garments Logo" className="h-16 md:h-20 object-contain" />
+        <Link to="/" className="flex-shrink-0">
+          <img src="/logo.png" alt="A.D Garments Logo" className="h-16 md:h-20 w-auto object-contain" />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex space-x-8">
+        <nav className="hidden lg:flex ml-auto items-center space-x-8">
           <Link to="/" className="text-sm font-semibold text-brand-navy hover:text-brand-gold transition-colors tracking-wide">HOME</Link>
           <Link to="/about" className="text-sm font-semibold text-brand-navy hover:text-brand-gold transition-colors tracking-wide">WHO ARE WE</Link>
           <Link to="/products" className="text-sm font-semibold text-brand-navy hover:text-brand-gold transition-colors tracking-wide">WHAT WE MAKE</Link>
@@ -40,7 +40,7 @@ const Header = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden text-brand-charcoal"
+          className="lg:hidden ml-auto text-brand-charcoal"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
