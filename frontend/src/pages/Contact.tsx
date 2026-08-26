@@ -9,7 +9,7 @@ const Contact = () => {
         <meta name="description" content="Contact A.D Garments for bulk garment production and job-work requirements." />
       </Helmet>
 
-      <div className="pt-24 pb-16 bg-brand-charcoal text-white">
+      <div className="pt-36 pb-16 bg-brand-charcoal text-white">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact A.D Garments</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -91,7 +91,7 @@ const Contact = () => {
             {/* Google Maps Placeholder */}
             <div className="w-full h-full min-h-[400px]">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.7725964893144!2d77.24137257549646!3d28.5164998757279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1a153200001%3A0x7d637c358e23df37!2sSangam%20Vihar%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                src="https://maps.google.com/maps?q=A.D.+Garments,+Sangam+Vihar,+New+Delhi&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
