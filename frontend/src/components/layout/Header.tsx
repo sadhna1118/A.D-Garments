@@ -14,17 +14,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Process", path: "/process" },
-    { name: "Infrastructure", path: "/infrastructure" },
-    { name: "Gallery", path: "/gallery" },
-    { name: "Quality", path: "/quality" },
-    { name: "Contact", path: "/contact" },
-  ];
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${

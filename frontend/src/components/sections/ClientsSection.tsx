@@ -1,5 +1,4 @@
 import { Building2, Users, Briefcase } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const reasons = [
   { title: "Skilled Workforce", desc: "Experienced production and stitching team.", icon: <Users size={24} /> },

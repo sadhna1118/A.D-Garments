@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { MessageSquare, Clock, CheckCircle, XCircle } from "lucide-react";
 
 // Placeholder data for frontend demonstration

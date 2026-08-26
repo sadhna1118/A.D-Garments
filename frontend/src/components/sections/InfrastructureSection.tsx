@@ -2,12 +2,6 @@ import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
-const infrastructureImages = [
-  { id: 1, title: "Stitching Area", url: "https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?w=600&auto=format&fit=crop&q=60" },
-  { id: 2, title: "Cutting Area", url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=60" },
-  { id: 3, title: "Quality Control", url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&auto=format&fit=crop&q=60" },
-];
-
 const InfrastructureSection = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
