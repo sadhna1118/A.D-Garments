@@ -91,7 +91,7 @@ const Contact = () => {
             {/* Google Maps Placeholder */}
             <div className="w-full h-full min-h-[400px]">
               <iframe 
-                src="https://maps.google.com/maps?q=A.D.+Garments,+Sangam+Vihar,+New+Delhi+(A.D.+Garments)&t=&z=15&ie=UTF8&iwloc=B&output=embed" 
+                src="https://maps.google.com/maps?q=A.D.+Garments,+Sangam+Vihar,+New+Delhi&t=&z=15&ie=UTF8&iwloc=B&output=embed" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
