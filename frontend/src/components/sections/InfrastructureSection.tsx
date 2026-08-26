@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
 
 const InfrastructureSection = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-
   return (
     <section className="py-24 bg-brand-offwhite" id="infrastructure">
       <div className="container mx-auto px-6 lg:px-12">
@@ -18,11 +11,11 @@ const InfrastructureSection = () => {
           </p>
         </div>
 
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow">
             <div className="bg-brand-offwhite w-16 h-16 rounded-full flex items-center justify-center mb-6">
               <span className="text-3xl font-bold text-brand-gold">
-                {inView ? <CountUp end={50} duration={2.5} suffix="+" /> : "0+"}
+                50+
               </span>
             </div>
             <h3 className="text-xl font-bold text-brand-navy mb-3">Motor Machines</h3>
@@ -40,7 +33,7 @@ const InfrastructureSection = () => {
           <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow">
             <div className="bg-brand-offwhite w-16 h-16 rounded-full flex items-center justify-center mb-6">
               <span className="text-3xl font-bold text-brand-gold">
-                {inView ? <CountUp end={50} duration={2.5} suffix="+" /> : "0+"}
+                50+
               </span>
             </div>
             <h3 className="text-xl font-bold text-brand-navy mb-3">Skilled Workers</h3>
@@ -50,7 +43,7 @@ const InfrastructureSection = () => {
           <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow">
             <div className="bg-brand-offwhite w-16 h-16 rounded-full flex items-center justify-center mb-6">
               <span className="text-3xl font-bold text-brand-gold">
-                {inView ? <CountUp end={30} duration={2.5} /> : "0"}
+                30
               </span>
             </div>
             <h3 className="text-xl font-bold text-brand-navy mb-3">Years Legacy</h3>
