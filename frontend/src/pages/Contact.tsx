@@ -48,8 +48,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-brand-charcoal mb-2">Contact Numbers</h3>
-                  <p className="text-gray-600 mb-1">+91 9350537559</p>
-                  <p className="text-gray-600 mb-4">WhatsApp: +91 9350537559</p>
+                  <p className="text-gray-600 mb-1">
+                    <a href="tel:+919350537559" className="hover:text-brand-gold transition-colors">+91 9350537559</a>
+                  </p>
+                  <p className="text-gray-600 mb-4">
+                    WhatsApp: <a href="https://wa.me/919350537559" target="_blank" rel="noreferrer" className="hover:text-brand-gold transition-colors">+91 9350537559</a>
+                  </p>
                   <div className="flex space-x-4">
                     <a href="tel:+919350537559" className="flex items-center space-x-2 text-brand-navy hover:text-brand-gold transition-colors font-medium">
                       <PhoneCall size={18} />

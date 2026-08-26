@@ -44,9 +44,6 @@ const Footer = () => {
                 <Link to="/gallery" className="hover:text-brand-gold transition-colors">Factory Photos</Link>
               </li>
               <li>
-                <Link to="/quality" className="text-gray-300 hover:text-brand-gold transition-colors">Quality</Link>
-              </li>
-              <li>
                 <Link to="/contact" className="text-gray-300 hover:text-brand-gold transition-colors">Contact</Link>
               </li>
             </ul>
@@ -66,11 +63,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-brand-gold shrink-0" />
-                <span className="text-gray-300">+91 9350537559</span>
+                <a href="tel:+919350537559" className="text-gray-300 hover:text-brand-gold transition-colors">+91 9350537559</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-brand-gold shrink-0" />
-                <span className="text-gray-300">manojkumar9350537559@gmail.com</span>
+                <a href="mailto:manojkumar9350537559@gmail.com" className="text-gray-300 hover:text-brand-gold transition-colors break-all">manojkumar9350537559@gmail.com</a>
               </li>
             </ul>
           </div>
