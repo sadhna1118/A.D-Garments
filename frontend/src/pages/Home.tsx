@@ -6,8 +6,7 @@ import ProcessSection from "../components/sections/ProcessSection";
 import CategoriesSection from "../components/sections/CategoriesSection";
 import InfrastructureSection from "../components/sections/InfrastructureSection";
 import QualitySection from "../components/sections/QualitySection";
-import ClientsSection from "../components/sections/ClientsSection";
-import TestimonialsSection from "../components/sections/TestimonialsSection";
+
 
 const Home = () => {
   return (
@@ -90,11 +89,9 @@ const Home = () => {
 
       <ServicesSection />
       <ProcessSection />
-      <TestimonialsSection />
       <CategoriesSection />
       <InfrastructureSection />
       <QualitySection />
-      <ClientsSection />
       {/* Final CTA */}
       <section className="py-24 bg-brand-gold text-brand-navy text-center">
         <div className="container mx-auto px-6 max-w-3xl">
