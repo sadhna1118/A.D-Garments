@@ -96,24 +96,24 @@ const Home = () => {
       <QualitySection />
       <ClientsSection />
       {/* Final CTA */}
-      <section className="py-24 bg-brand-navy text-white text-center">
+      <section className="py-24 bg-brand-gold text-brand-navy text-center">
         <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Let's Build Your Next Production Batch.
           </h2>
-          <p className="text-lg text-gray-300 mb-10">
+          <p className="text-lg text-brand-navy/80 font-medium mb-10">
             Have a garment production requirement? Share your specifications with A.D Garments.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Link 
               to="/quote" 
-              className="bg-brand-gold text-brand-navy px-8 py-4 rounded-sm font-semibold hover:bg-white transition-colors"
+              className="bg-brand-navy text-white px-8 py-4 rounded-sm font-semibold hover:bg-white hover:text-brand-navy transition-colors shadow-lg"
             >
               Request a Quote
             </Link>
             <Link 
               to="/contact" 
-              className="bg-transparent border border-brand-gold text-brand-gold px-8 py-4 rounded-sm font-semibold hover:bg-brand-gold hover:text-brand-navy transition-colors"
+              className="bg-transparent border-2 border-brand-navy text-brand-navy px-8 py-4 rounded-sm font-semibold hover:bg-brand-navy hover:text-white transition-colors"
             >
               Contact Our Team
             </Link>
